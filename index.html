@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aj Arts - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="antialiased">
+    <!-- Header & Navigation -->
+    <header class="bg-zinc-950 p-6 sticky top-0 z-50 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <a
+          href="index.html"
+          class="text-3xl font-extrabold text-white tracking-widest unica-one"
+          >Aj Arts</a
+        >
+        <nav class="hidden md:flex space-x-10">
+          <a
+            href="index.html"
+            class="text-white font-bold hover:text-stone-400 transition-colors duration-300"
+            >Home</a
+          >
+          <a
+            href="projects.html"
+            class="text-stone-400 hover:text-white transition-colors duration-300"
+            >Projects</a
+          >
+          <a
+            href="contact.html"
+            class="text-stone-400 hover:text-white transition-colors duration-300"
+            >Contact</a
+          >
+        </nav>
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-stone-400 focus:outline-none"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-zinc-950 p-4 rounded-b-lg shadow-lg"
+      >
+        <a
+          href="index.html"
+          class="block py-2 text-white hover:text-stone-300 transition-colors duration-300"
+          >Home</a
+        >
+        <a
+          href="projects.html"
+          class="block py-2 text-stone-400 hover:text-white transition-colors duration-300"
+          >Projects</a
+        >
+        <a
+          href="contact.html"
+          class="block py-2 text-stone-400 hover:text-white transition-colors duration-300"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <main class="relative z-20 min-h-screen">
+      <!-- Hero Section -->
+      <section
+        class="h-[80vh] flex flex-col justify-center items-center text-center p-6 hero-background"
+      >
+        <div class="hero-overlay"></div>
+        <div class="relative z-10">
+          <h1
+            class="text-5xl sm:text-6xl lg:text-8xl font-black text-white leading-tight uppercase unica-one drop-shadow-lg"
+          >
+            Aj Arts
+          </h1>
+          <p
+            class="text-lg sm:text-xl text-stone-400 mt-4 max-w-3xl mx-auto drop-shadow-md"
+          >
+            Crafting visuals that captivate.
+          </p>
+          <a
+            href="#work"
+            class="mt-8 inline-block button-gradient text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg uppercase tracking-wide"
+          >
+            View Portfolio
+          </a>
+        </div>
+      </section>
+
+      <!-- Dynamic Grid Section -->
+      <section id="work" class="container mx-auto px-4 py-20">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
+          Latest Work
+        </h2>
+        <div
+          id="liquid-grid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Project 1 -->
+          <div class="rounded-3xl overflow-hidden shadow-2xl liquid-card">
+            <a href="projects.html">
+              <img
+                src="images/my-movie-poster.jpg"
+                alt="Movie Poster"
+                class="w-full h-auto object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white">
+                  Punjabi Movie Poster
+                </h3>
+                <p class="text-stone-400 mt-2">
+                  Design for a blockbuster film.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- Project 2 -->
+          <div class="rounded-3xl overflow-hidden shadow-2xl liquid-card">
+            <a href="projects.html">
+              <img
+                src="images/aj-arts-logo.jpg"
+                alt="Brand Logo"
+                class="w-full h-auto object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white">Brand Logo Design</h3>
+                <p class="text-stone-400 mt-2">
+                  Minimalist logo for a new startup.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- Project 3 -->
+          <div class="rounded-3xl overflow-hidden shadow-2xl liquid-card">
+            <a href="projects.html">
+              <img
+                src="images/album-art.jpg"
+                alt="Album Art"
+                class="w-full h-auto object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white">Punjabi Album Art</h3>
+                <p class="text-stone-400 mt-2">Vibrant art for a hit album.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <a
+            href="projects.html"
+            class="inline-block button-gradient text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg uppercase tracking-wide"
+          >
+            View All Projects
+          </a>
+        </div>
+      </section>
+
+      <!-- About and Contact Section -->
+      <section class="container mx-auto px-4 py-16 text-center">
+        <h2 class="text-3xl font-bold mb-4 text-white">About Me</h2>
+        <p class="text-lg text-stone-400 mb-6 max-w-2xl mx-auto">
+          I am Amritpal Singh, a visual artist and graphic designer with a
+          passion for creating captivating visuals for the Punjabi entertainment
+          industry.
+        </p>
+        <a
+          href="contact.html"
+          class="button-gradient text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg uppercase tracking-wide"
+        >
+          Let's Collaborate
+        </a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-zinc-950 text-stone-400 text-center py-6 mt-12 border-t border-zinc-800"
+    >
+      <p>&copy; 2024 Aj Arts. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu & Dynamic Grid -->
+    <script>
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+        });
+
+      const grid = document.getElementById("liquid-grid");
+      const cards = grid.querySelectorAll(".liquid-card");
+
+      grid.addEventListener("mousemove", (e) => {
+        cards.forEach((card) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+
+          // Refined the transform to be more subtle and less "bouncy"
+          const transformX = x * 0.02;
+          const transformY = y * 0.02;
+
+          card.style.transform = `translate(${transformX}px, ${transformY}px)`;
+        });
+      });
+
+      grid.addEventListener("mouseleave", () => {
+        cards.forEach((card) => {
+          card.style.transform = "translate(0, 0)";
+        });
+      });
+    </script>
+  </body>
+</html>
